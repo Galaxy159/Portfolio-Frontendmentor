@@ -17,6 +17,7 @@ html {
 
 body {
   font-family: "Space-Grotesk";
+  background-color: #151515;
 }
 
 p {
@@ -90,4 +91,21 @@ h4 {
   font-size: 2.4rem;
   line-height: 3.2rem;
   color: #ffffff;
+}
+
+button {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 2.29px;
+  background: none;
+  border: none;
+  color: #ffffff;
+}
+button a {
+  text-decoration: none;
+}
+
+.header__social--icon {
+  fill: black;
 }/*# sourceMappingURL=App.css.map */

@@ -38,6 +38,7 @@ html {
 
 body {
   font-family: "Space-Grotesk";
+  background-color: $color-black;
 }
 
 p {
@@ -104,4 +105,18 @@ h4 {
   font-size: 2.4rem;
   line-height: 3.2rem;
   color: $color-white;
+}
+
+button {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 2.29px;
+  background: none;
+  border: none;
+  color: $color-white;
+
+  & a {
+    text-decoration: none;
+  }
 }
