@@ -101,6 +101,7 @@ button {
   background: none;
   border: none;
   color: #ffffff;
+  cursor: pointer;
 }
 button a {
   text-decoration: none;

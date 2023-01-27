@@ -15,13 +15,13 @@ export default function Hero() {
         </div>
         <div className="header__content">
           <h1 className="header__content--headline">
-            Nice to meet you! I'm Adam Keyes.
+            Nice to meet you! I'm <span>Adam Keyes</span>.
           </h1>
           <p className="header__content--text">
             Based in the UK, I’m a front-end developer passionate about building
             accessible web apps that users love.
           </p>
-          <button>CONTACT ME</button>
+          <button className="header__content--btn">CONTACT ME</button>
         </div>
       </section>
     </>
