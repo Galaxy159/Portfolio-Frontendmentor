@@ -1,0 +1,10 @@
+.projects {
+  margin: 0 auto;
+  max-width: 34.3rem;
+  &__project {
+    &--img {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
+}

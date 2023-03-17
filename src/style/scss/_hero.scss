@@ -1,7 +1,25 @@
 .hero {
   &__photo {
+    overflow: hidden;
+    position: relative;
     &--img {
       width: 17.4rem;
+    }
+    &--bgPattern-circle,
+    &--bgPattern-rings {
+      position: absolute;
+      z-index: -1;
+    }
+
+    &--bgPattern-circle {
+      bottom: 0;
+      right: 0;
+      transform: translateX(50%);
+    }
+    &--bgPattern-rings {
+      top: 32%;
+      left: 0;
+      transform: translateX(-65%);
     }
   }
 }
