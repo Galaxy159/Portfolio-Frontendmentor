@@ -5,8 +5,12 @@ export default function Project(props) {
         <img src={props.img} alt="" className="projects__project--img" />
         <h4 className="projects__project--headline">{props.name}</h4>
         <div className="projects__project--tools">
-          {props.tools.map((tool) => {
-            return <p className="projects__project--tools--tool">{tool}</p>;
+          {props.tools.map((tool, index) => {
+            return (
+              <p className="projects__project--tools--tool" key={index}>
+                {tool}
+              </p>
+            );
           })}
         </div>
         <div className="projects__project--links">

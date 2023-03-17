@@ -3,7 +3,7 @@ import sprite from "../assets/images/sprite.svg";
 export default function Footer() {
   return (
     <>
-      <header className="footer">
+      <footer className="footer">
         <div className="footer__logo">
           <p className="footer__logo--text">adamkeyes</p>
         </div>
@@ -21,7 +21,7 @@ export default function Footer() {
             <use href={`${sprite}#icon-twitter`} />
           </svg>
         </div>
-      </header>
+      </footer>
     </>
   );
 }

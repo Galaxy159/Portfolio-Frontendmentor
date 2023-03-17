@@ -107,6 +107,35 @@ button a {
   text-decoration: none;
 }
 
+.container {
+  text-align: center;
+}
+
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 2rem;
+}
+.header__logo--text {
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-weight: 700;
+}
+.header__social {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 2.4rem;
+       column-gap: 2.4rem;
+}
 .header__social--icon {
   fill: white;
+  transform: scale(0.8);
+}
+
+.hero__photo--img {
+  width: 17.4rem;
 }/*# sourceMappingURL=App.css.map */
