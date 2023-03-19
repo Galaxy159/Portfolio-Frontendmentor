@@ -1,11 +1,32 @@
 .contact {
-  padding: 6rem 1.6rem 8.7rem 1.6rem;
-  border-bottom: 1px solid white;
   background-color: $color-grey-dark;
+
+  &__container {
+    max-width: 34.3rem;
+    padding-block: 6rem 8.7rem;
+    margin: 0 auto;
+    border-bottom: 1px solid white;
+  }
   &__content {
     margin-bottom: 5rem;
     &--headline {
       margin-bottom: 2rem;
+    }
+  }
+
+  &__form {
+    text-align: left;
+    &--input {
+      & input {
+        background-color: transparent;
+        color: white;
+        border: none;
+        padding-bottom: 1.6rem;
+        padding-left: 2.4rem;
+        border-bottom: 1px solid white;
+        margin-bottom: 3.2rem;
+        width: 100%;
+      }
     }
   }
 }

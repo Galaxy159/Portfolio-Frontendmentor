@@ -233,15 +233,32 @@ button a {
 }
 
 .contact {
-  padding: 6rem 1.6rem 8.7rem 1.6rem;
-  border-bottom: 1px solid white;
   background-color: #242424;
+}
+.contact__container {
+  max-width: 34.3rem;
+  padding-block: 6rem 8.7rem;
+  margin: 0 auto;
+  border-bottom: 1px solid white;
 }
 .contact__content {
   margin-bottom: 5rem;
 }
 .contact__content--headline {
   margin-bottom: 2rem;
+}
+.contact__form {
+  text-align: left;
+}
+.contact__form--input input {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding-bottom: 1.6rem;
+  padding-left: 2.4rem;
+  border-bottom: 1px solid white;
+  margin-bottom: 3.2rem;
+  width: 100%;
 }
 
 .footer {
