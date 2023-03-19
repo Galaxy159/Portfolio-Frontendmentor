@@ -31,6 +31,7 @@ export default function Contact() {
               placeholder="MESSAGE"
             />
           </div>
+          <button className="contact__form--btn">SEND MESSAGE</button>
         </form>
       </section>
     </>

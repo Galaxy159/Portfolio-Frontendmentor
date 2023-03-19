@@ -1,0 +1,11 @@
+.contact {
+  padding: 6rem 1.6rem 8.7rem 1.6rem;
+  border-bottom: 1px solid white;
+  background-color: $color-grey-dark;
+  &__content {
+    margin-bottom: 5rem;
+    &--headline {
+      margin-bottom: 2rem;
+    }
+  }
+}
