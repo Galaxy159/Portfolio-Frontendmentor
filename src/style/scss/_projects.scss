@@ -1,6 +1,17 @@
 .projects {
   margin: 0 auto;
   max-width: 34.3rem;
+  &__header {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+    margin-bottom: 4rem;
+
+    &--btn {
+      padding-bottom: 1rem;
+      border-bottom: 2px solid $color-green;
+    }
+  }
   &__project {
     &--img {
       max-width: 100%;
