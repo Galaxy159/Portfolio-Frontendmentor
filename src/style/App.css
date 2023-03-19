@@ -191,7 +191,7 @@ button a {
 }
 
 .projects {
-  margin: 0 auto;
+  margin: 0 auto 8rem;
   max-width: 34.3rem;
 }
 .projects__header {
@@ -204,7 +204,32 @@ button a {
   padding-bottom: 1rem;
   border-bottom: 2px solid #4ee1a0;
 }
+.projects__project {
+  text-align: left;
+  margin-bottom: 4rem;
+}
 .projects__project--img {
   max-width: 100%;
   margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.projects__project--headline {
+  margin-bottom: 0.7rem;
+}
+.projects__project--tools {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  -moz-column-gap: 1.8rem;
+       column-gap: 1.8rem;
+  margin-bottom: 2rem;
+}
+.projects__project--links {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  -moz-column-gap: 2.4rem;
+       column-gap: 2.4rem;
+}
+.projects__project--links-btn {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #4ee1a0;
 }/*# sourceMappingURL=App.css.map */

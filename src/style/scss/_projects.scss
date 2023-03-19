@@ -1,5 +1,5 @@
 .projects {
-  margin: 0 auto;
+  margin: 0 auto 8rem;
   max-width: 34.3rem;
   &__header {
     display: grid;
@@ -13,9 +13,32 @@
     }
   }
   &__project {
+    text-align: left;
+    margin-bottom: 4rem;
     &--img {
       max-width: 100%;
       margin: 0 auto;
+      margin-bottom: 2rem;
+    }
+    &--headline {
+      margin-bottom: 0.7rem;
+    }
+    &--tools {
+      display: grid;
+      grid-template-columns: repeat(3, max-content);
+      column-gap: 1.8rem;
+      margin-bottom: 2rem;
+    }
+
+    &--links {
+      display: grid;
+      grid-template-columns: repeat(2, max-content);
+      column-gap: 2.4rem;
+
+      &-btn {
+        padding-bottom: 1rem;
+        border-bottom: 2px solid $color-green;
+      }
     }
   }
 }
