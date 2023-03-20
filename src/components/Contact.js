@@ -1,4 +1,3 @@
-import rings from "../assets/images/pattern-rings.svg";
 export default function Contact() {
   return (
     <>
