@@ -1,3 +1,4 @@
+import rings from "../assets/images/pattern-rings.svg";
 export default function Contact() {
   return (
     <>
@@ -27,13 +28,15 @@ export default function Contact() {
               />
             </div>
             <div className="contact__form--input">
-              <input
+              <textarea
                 className="contact__form--input-message"
                 type="text"
                 placeholder="MESSAGE"
-              />
+              ></textarea>
             </div>
-            <button className="contact__form--btn">SEND MESSAGE</button>
+            <div className="contact__form--btn">
+              <button>SEND MESSAGE</button>
+            </div>
           </form>
         </div>
       </section>

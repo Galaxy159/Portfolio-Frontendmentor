@@ -248,6 +248,9 @@ svg:hover {
 
 .contact {
   background-color: #242424;
+  position: relative;
+  background: url(../assets/images/pattern-rings.svg) no-repeat, #242424;
+  background-position: top 42.5rem left -34rem;
 }
 .contact__container {
   max-width: 34.3rem;
@@ -277,6 +280,25 @@ svg:hover {
 .contact__form--input input:focus {
   outline: none;
   border-bottom: 1px solid #4ee1a0;
+}
+.contact__form--input textarea {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding-bottom: 6.4rem;
+  padding-left: 2.4rem;
+  border-bottom: 1px solid white;
+  margin-bottom: 3.2rem;
+  width: 100%;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+.contact__form--input textarea:focus {
+  outline: none;
+  border-bottom: 1px solid #4ee1a0;
+}
+.contact__form--btn {
+  text-align: right;
 }
 
 .footer {
