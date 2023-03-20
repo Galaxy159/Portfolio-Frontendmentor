@@ -103,9 +103,21 @@ button {
   color: #ffffff;
   cursor: pointer;
   border-bottom: 2px solid #4ee1a0;
+  transition: all 0.2s;
+}
+button:hover {
+  color: #4ee1a0;
 }
 button a {
   text-decoration: none;
+}
+
+svg {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+svg:hover {
+  fill: #4ee1a0;
 }
 
 .container {
@@ -135,6 +147,7 @@ button a {
 .header__social--icon {
   fill: white;
   transform: scale(0.8);
+  cursor: pointer;
 }
 .header__content {
   max-width: 34.3rem;
@@ -159,6 +172,7 @@ button a {
   position: relative;
   height: 38.3rem;
   margin-bottom: 4rem;
+  z-index: -1;
 }
 .hero__photo--img {
   width: 17.4rem;
@@ -259,6 +273,10 @@ button a {
   border-bottom: 1px solid white;
   margin-bottom: 3.2rem;
   width: 100%;
+}
+.contact__form--input input:focus {
+  outline: none;
+  border-bottom: 1px solid #4ee1a0;
 }
 
 .footer {

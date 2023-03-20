@@ -26,6 +26,10 @@
         border-bottom: 1px solid white;
         margin-bottom: 3.2rem;
         width: 100%;
+        &:focus {
+          outline: none;
+          border-bottom: 1px solid $color-green;
+        }
       }
     }
   }
