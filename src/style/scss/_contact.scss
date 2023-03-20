@@ -21,6 +21,7 @@
   &__form {
     text-align: left;
     &--input {
+      position: relative;
       & input {
         background-color: transparent;
         color: white;
@@ -51,9 +52,38 @@
           border-bottom: 1px solid $color-green;
         }
       }
+
+      &-error {
+        font-weight: 500;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        letter-spacing: -0.17px;
+        margin-top: -2.7rem;
+
+        color: #ff6f5b;
+        text-align: right;
+        display: none;
+        transition: all 0.2s;
+
+        &-img {
+          display: none;
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 2.4rem;
+        }
+      }
     }
     &--btn {
       text-align: right;
     }
   }
+}
+
+.show {
+  display: block;
+}
+
+.errorBorder {
+  border-bottom: 1px solid #ff6f5b !important;
 }

@@ -1,4 +1,13 @@
+import { useState } from "react";
+import error from "../assets/images/error.svg";
+
 export default function Contact() {
+  const [isValid, setIsValid] = useState(true);
+  const [inputVal, setInputVal] = useState("");
+  const validateEmail = function (email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+  };
   return (
     <>
       <section className="contact">
@@ -21,9 +30,32 @@ export default function Contact() {
             </div>
             <div className="contact__form--input">
               <input
-                className="contact__form--input-email"
+                onChange={(e) => setInputVal(e.target.value)}
+                className={
+                  isValid
+                    ? "contact__form--input-email"
+                    : "contact__form--input-email errorBorder"
+                }
                 type="email"
                 placeholder="EMAIL"
+              />
+              <p
+                className={
+                  isValid
+                    ? "contact__form--input-error"
+                    : "contact__form--input-error show"
+                }
+              >
+                Error, please check your email
+              </p>
+              <img
+                src={error}
+                alt=""
+                className={
+                  isValid
+                    ? "contact__form--input-error-img"
+                    : "contact__form--input-error-img show"
+                }
               />
             </div>
             <div className="contact__form--input">
@@ -34,7 +66,9 @@ export default function Contact() {
               ></textarea>
             </div>
             <div className="contact__form--btn">
-              <button>SEND MESSAGE</button>
+              <button onClick={() => setIsValid(validateEmail(inputVal))}>
+                SEND MESSAGE
+              </button>
             </div>
           </form>
         </div>
