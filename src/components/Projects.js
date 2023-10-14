@@ -9,9 +9,11 @@ export default function Projects() {
           <h3 className="projects__header--headline">Projects</h3>
           <button className="projects__header--btn">CONTACT ME</button>
         </div>
-        {projectsList.map((project, index) => {
-          return <Project key={index} {...project} />;
-        })}
+        <div className="projects__container">
+          {projectsList.map((project, index) => {
+            return <Project key={index} {...project} />;
+          })}
+        </div>
       </section>
     </>
   );

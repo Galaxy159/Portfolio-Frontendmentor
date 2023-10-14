@@ -1,21 +1,40 @@
 .projects {
   margin: 0 auto 8rem;
   max-width: 34.3rem;
+  @include respond(tablet) {
+    max-width: 70.8rem;
+    margin: 0 auto 10rem;
+  }
+
   &__header {
     display: grid;
     grid-template-columns: repeat(2, max-content);
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 4rem;
+
+    @include respond(tablet) {
+      margin-bottom: 6rem;
+    }
 
     &--btn {
       padding-bottom: 1rem;
     }
   }
+
+  &__container {
+    @include respond(tablet) {
+      display: grid;
+      grid-template-columns: repeat(2, max-content);
+      justify-content: space-between;
+    }
+  }
+
   &__project {
     text-align: left;
     margin-bottom: 4rem;
     &--img {
-      max-width: 100%;
+      max-width: 34.5rem;
       margin: 0 auto;
       margin-bottom: 2rem;
     }

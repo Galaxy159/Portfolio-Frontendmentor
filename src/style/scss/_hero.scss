@@ -1,17 +1,39 @@
 .hero {
-  &__photo {
-    overflow: hidden;
+  @include respond(tablet) {
+    height: 60rem;
     position: relative;
+    margin: 0 auto 6rem auto;
+    max-width: 70.8rem;
+  }
+  &__photo {
+    position: relative;
+    overflow: hidden;
+
     height: 38.3rem;
     margin-bottom: 4rem;
     z-index: -1;
+
+    @include respond(tablet) {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 32.2rem;
+      height: 100%;
+      transform: translateX(3rem);
+    }
     &--img {
       width: 17.4rem;
+      @include respond(tablet) {
+        width: 100%;
+      }
     }
     &--bgPattern-circle,
     &--bgPattern-rings {
       position: absolute;
       z-index: -1;
+      @include respond(tablet) {
+        z-index: 1;
+      }
     }
 
     &--bgPattern-circle {
@@ -23,6 +45,62 @@
       top: 32%;
       left: 0;
       transform: translateX(-65%);
+      @include respond(tablet) {
+        display: none;
+      }
+    }
+  }
+
+  &__bgPattern-rings {
+    position: absolute;
+    display: none;
+    @include respond(tablet) {
+      display: block;
+      top: 8.6rem;
+      transform: translateX(-56%);
+    }
+  }
+
+  &__content {
+    max-width: 34.3rem;
+    margin: 0 auto;
+
+    @include respond(tablet) {
+      text-align: left;
+      max-width: 44.5rem;
+      padding: 15rem 0 0 0;
+      margin: 0;
+    }
+    &--headline {
+      margin-bottom: 2rem;
+      @include respond(tablet) {
+        margin-bottom: 6rem;
+      }
+      & span {
+        border-bottom: 4px solid $color-green;
+      }
+      &-break {
+        display: none;
+        @include respond(tablet) {
+          display: block;
+        }
+      }
+    }
+    &--text {
+      margin-bottom: 2.4rem;
+      @include respond(tablet) {
+        margin-bottom: 3.4rem;
+      }
+    }
+    &--btn {
+      padding-bottom: 1rem;
+      margin-bottom: 8rem;
+
+      @include respond(tablet) {
+        margin: 0;
+        position: absolute;
+        bottom: 0;
+      }
     }
   }
 }

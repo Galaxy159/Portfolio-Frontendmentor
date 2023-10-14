@@ -5,11 +5,30 @@
     $color-grey-dark;
   background-position: top 42.5rem left -34rem;
 
+  @include respond(tablet) {
+    background-position: top 53rem left -36.5rem;
+  }
+
+  &__divider {
+    height: 1px;
+    background-color: white;
+    width: 34.3rem;
+    margin: 0 auto;
+
+    @include respond(tablet) {
+      width: 70.8rem;
+    }
+  }
+
   &__container {
     max-width: 34.3rem;
     padding-block: 6rem 8.7rem;
     margin: 0 auto;
-    border-bottom: 1px solid white;
+
+    @include respond(tablet) {
+      max-width: 44.5rem;
+      padding-block: 6rem 9.2rem;
+    }
   }
   &__content {
     margin-bottom: 5rem;

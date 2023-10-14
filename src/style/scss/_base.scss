@@ -46,6 +46,9 @@ p {
   font-size: 1.6rem;
   line-height: 2.6rem;
   color: $color-grey;
+  @include respond(tablet) {
+    font-size: 1.8rem;
+  }
 }
 
 h1 {
@@ -137,5 +140,15 @@ svg {
 }
 
 .container {
+  max-width: 37.5rem;
   text-align: center;
+  margin: 0 auto;
+
+  background: no-repeat url("../assets/images/pattern-rings.svg");
+  background-position: right -34.3rem top 130rem;
+
+  @include respond(tablet) {
+    max-width: 76.8rem;
+    background-position: right -33rem top 100rem;
+  }
 }

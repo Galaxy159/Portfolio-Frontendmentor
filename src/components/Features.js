@@ -1,3 +1,5 @@
+import bgPartternRings from "../assets/images/pattern-rings.svg";
+
 export default function Features() {
   return (
     <>

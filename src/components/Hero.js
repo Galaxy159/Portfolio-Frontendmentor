@@ -25,15 +25,19 @@ export default function Hero() {
             className="hero__photo--bgPattern-rings"
           />
         </div>
-        <div className="header__content">
-          <h1 className="header__content--headline">
-            Nice to meet you! I'm <span>Adam Keyes</span>.
+        <img src={bgPartternRings} alt="" className="hero__bgPattern-rings" />
+        <div className="hero__content">
+          <h1 className="hero__content--headline">
+            Nice to<br className="hero__content--headline-break"></br> meet you!
+            I'm <span>Adam Keyes</span>.
           </h1>
-          <p className="header__content--text">
-            Based in the UK, I’m a front-end developer passionate about building
-            accessible web apps that users love.
+          <p className="hero__content--text">
+            Based in the UK, I’m a front-end developer
+            <br className="hero__content--headline-break"></br> passionate about
+            building accessible web apps
+            <br className="hero__content--headline-break"></br> that users love.
           </p>
-          <button className="header__content--btn">CONTACT ME</button>
+          <button className="hero__content--btn">CONTACT ME</button>
         </div>
       </section>
     </>

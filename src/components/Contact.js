@@ -72,6 +72,7 @@ export default function Contact() {
             </div>
           </form>
         </div>
+        <div className="contact__divider"></div>
       </section>
     </>
   );

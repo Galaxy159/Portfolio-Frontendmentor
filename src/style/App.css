@@ -26,6 +26,11 @@ p {
   line-height: 2.6rem;
   color: #d9d9d9;
 }
+@media (min-width: 768px) {
+  p {
+    font-size: 1.8rem;
+  }
+}
 
 h1 {
   font-weight: 700;
@@ -121,7 +126,17 @@ svg:hover {
 }
 
 .container {
+  max-width: 37.5rem;
   text-align: center;
+  margin: 0 auto;
+  background: no-repeat url("../assets/images/pattern-rings.svg");
+  background-position: right -34.3rem top 130rem;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 76.8rem;
+    background-position: right -33rem top 100rem;
+  }
 }
 
 .header {
@@ -130,11 +145,26 @@ svg:hover {
   right: 0;
   top: 2rem;
 }
+@media (min-width: 768px) {
+  .header {
+    max-width: 70.8rem;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+    margin: 3rem auto;
+    top: 0;
+  }
+}
 .header__logo--text {
   margin-bottom: 2rem;
   font-size: 2.4rem;
   line-height: 3.2rem;
   font-weight: 700;
+}
+@media (min-width: 768px) {
+  .header__logo--text {
+    margin-bottom: 0;
+  }
 }
 .header__social {
   display: grid;
@@ -149,37 +179,48 @@ svg:hover {
   transform: scale(0.8);
   cursor: pointer;
 }
-.header__content {
-  max-width: 34.3rem;
-  margin: 0 auto;
-}
-.header__content--headline {
-  margin-bottom: 2rem;
-}
-.header__content--headline span {
-  border-bottom: 4px solid #4ee1a0;
-}
-.header__content--text {
-  margin-bottom: 2.4rem;
-}
-.header__content--btn {
-  padding-bottom: 1rem;
-  margin-bottom: 8rem;
-}
 
+@media (min-width: 768px) {
+  .hero {
+    height: 60rem;
+    position: relative;
+    margin: 0 auto 6rem auto;
+    max-width: 70.8rem;
+  }
+}
 .hero__photo {
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
   height: 38.3rem;
   margin-bottom: 4rem;
   z-index: -1;
 }
+@media (min-width: 768px) {
+  .hero__photo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 32.2rem;
+    height: 100%;
+    transform: translateX(3rem);
+  }
+}
 .hero__photo--img {
   width: 17.4rem;
+}
+@media (min-width: 768px) {
+  .hero__photo--img {
+    width: 100%;
+  }
 }
 .hero__photo--bgPattern-circle, .hero__photo--bgPattern-rings {
   position: absolute;
   z-index: -1;
+}
+@media (min-width: 768px) {
+  .hero__photo--bgPattern-circle, .hero__photo--bgPattern-rings {
+    z-index: 1;
+  }
 }
 .hero__photo--bgPattern-circle {
   bottom: 0;
@@ -191,6 +232,72 @@ svg:hover {
   left: 0;
   transform: translateX(-65%);
 }
+@media (min-width: 768px) {
+  .hero__photo--bgPattern-rings {
+    display: none;
+  }
+}
+.hero__bgPattern-rings {
+  position: absolute;
+  display: none;
+}
+@media (min-width: 768px) {
+  .hero__bgPattern-rings {
+    display: block;
+    top: 8.6rem;
+    transform: translateX(-56%);
+  }
+}
+.hero__content {
+  max-width: 34.3rem;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .hero__content {
+    text-align: left;
+    max-width: 44.5rem;
+    padding: 15rem 0 0 0;
+    margin: 0;
+  }
+}
+.hero__content--headline {
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .hero__content--headline {
+    margin-bottom: 6rem;
+  }
+}
+.hero__content--headline span {
+  border-bottom: 4px solid #4ee1a0;
+}
+.hero__content--headline-break {
+  display: none;
+}
+@media (min-width: 768px) {
+  .hero__content--headline-break {
+    display: block;
+  }
+}
+.hero__content--text {
+  margin-bottom: 2.4rem;
+}
+@media (min-width: 768px) {
+  .hero__content--text {
+    margin-bottom: 3.4rem;
+  }
+}
+.hero__content--btn {
+  padding-bottom: 1rem;
+  margin-bottom: 8rem;
+}
+@media (min-width: 768px) {
+  .hero__content--btn {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+  }
+}
 
 .features {
   padding-block: 4rem;
@@ -200,29 +307,68 @@ svg:hover {
   margin: 0 auto;
   margin-bottom: 8rem;
 }
+@media (min-width: 768px) {
+  .features {
+    max-width: 70.8rem;
+    border-bottom: none;
+    padding-block: 5.2rem 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    -moz-column-gap: 12rem;
+         column-gap: 12rem;
+    row-gap: 5.2rem;
+    text-align: left;
+    margin: 0;
+    margin-left: 3rem;
+  }
+}
 .features__feature {
   margin-bottom: 2.4rem;
+}
+@media (min-width: 768px) {
+  .features__feature {
+    margin: 0;
+  }
 }
 
 .projects {
   margin: 0 auto 8rem;
   max-width: 34.3rem;
 }
+@media (min-width: 768px) {
+  .projects {
+    max-width: 70.8rem;
+    margin: 0 auto 10rem;
+  }
+}
 .projects__header {
   display: grid;
   grid-template-columns: repeat(2, max-content);
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 4rem;
+}
+@media (min-width: 768px) {
+  .projects__header {
+    margin-bottom: 6rem;
+  }
 }
 .projects__header--btn {
   padding-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .projects__container {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+  }
 }
 .projects__project {
   text-align: left;
   margin-bottom: 4rem;
 }
 .projects__project--img {
-  max-width: 100%;
+  max-width: 34.5rem;
   margin: 0 auto;
   margin-bottom: 2rem;
 }
@@ -252,11 +398,32 @@ svg:hover {
   background: url(../assets/images/pattern-rings.svg) no-repeat, #242424;
   background-position: top 42.5rem left -34rem;
 }
+@media (min-width: 768px) {
+  .contact {
+    background-position: top 53rem left -36.5rem;
+  }
+}
+.contact__divider {
+  height: 1px;
+  background-color: white;
+  width: 34.3rem;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .contact__divider {
+    width: 70.8rem;
+  }
+}
 .contact__container {
   max-width: 34.3rem;
   padding-block: 6rem 8.7rem;
   margin: 0 auto;
-  border-bottom: 1px solid white;
+}
+@media (min-width: 768px) {
+  .contact__container {
+    max-width: 44.5rem;
+    padding-block: 6rem 9.2rem;
+  }
 }
 .contact__content {
   margin-bottom: 5rem;
@@ -334,12 +501,26 @@ svg:hover {
   background-color: #242424;
   padding-block: 4rem 6rem;
 }
+@media (min-width: 768px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 3rem 4rem 3rem;
+  }
+}
 .footer__logo--text {
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 3.2rem;
   letter-spacing: -0.33px;
   margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .footer__logo--text {
+    margin: 0;
+  }
 }
 .footer__social {
   display: grid;
