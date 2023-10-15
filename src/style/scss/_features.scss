@@ -11,17 +11,33 @@
     border-bottom: none;
     padding-block: 5.2rem 10rem;
     display: grid;
-    grid-template-columns: repeat(2, max-content);
-    column-gap: 12rem;
+    grid-template-columns: repeat(2, 34.5rem);
+    grid-template-rows: repeat(3, 9.8rem);
+    column-gap: 0.7rem;
     row-gap: 5.2rem;
     text-align: left;
     margin: 0;
     margin-left: 3rem;
   }
+  @include respond(desktop) {
+    max-width: 111rem;
+    margin: 0 16.5rem;
+    padding-block: 7.2rem 14rem;
+    grid-template-columns: repeat(3, 34.5rem);
+    grid-template-rows: repeat(2, 9.8rem);
+    column-gap: 3rem;
+    row-gap: 5.8rem;
+  }
   &__feature {
     margin-bottom: 2.4rem;
     @include respond(tablet) {
       margin: 0;
+    }
+
+    &--headline {
+      @include respond(tablet) {
+        margin-bottom: 1.4rem;
+      }
     }
   }
 }

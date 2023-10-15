@@ -149,6 +149,11 @@ svg {
 
   @include respond(tablet) {
     max-width: 76.8rem;
-    background-position: right -33rem top 100rem;
+    background-position: right -33rem top 104.5rem;
+  }
+
+  @include respond(desktop) {
+    max-width: 144rem;
+    background-position: right -22.5rem top 107.5rem;
   }
 }

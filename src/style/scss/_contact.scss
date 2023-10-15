@@ -9,6 +9,10 @@
     background-position: top 53rem left -36.5rem;
   }
 
+  @include respond(desktop) {
+    background-position: top 31.5rem left -20.5rem;
+  }
+
   &__divider {
     height: 1px;
     background-color: white;
@@ -17,6 +21,9 @@
 
     @include respond(tablet) {
       width: 70.8rem;
+    }
+    @include respond(desktop) {
+      width: 111rem;
     }
   }
 
@@ -29,11 +36,28 @@
       max-width: 44.5rem;
       padding-block: 6rem 9.2rem;
     }
+
+    @include respond(desktop) {
+      max-width: 111rem;
+      display: grid;
+      grid-template-columns: repeat(2, 44.5rem);
+      justify-content: space-between;
+      text-align: left;
+      padding-block: 8.4rem 9.2rem;
+    }
   }
   &__content {
     margin-bottom: 5rem;
+
+    @include respond(desktop) {
+      margin-bottom: 0;
+    }
     &--headline {
       margin-bottom: 2rem;
+
+      @include respond(desktop) {
+        margin-bottom: 3.6rem;
+      }
     }
   }
 
