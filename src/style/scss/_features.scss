@@ -16,12 +16,10 @@
     column-gap: 0.7rem;
     row-gap: 5.2rem;
     text-align: left;
-    margin: 0;
-    margin-left: 3rem;
+    margin: 0 auto;
   }
   @include respond(desktop) {
     max-width: 111rem;
-    margin: 0 16.5rem;
     padding-block: 7.2rem 14rem;
     grid-template-columns: repeat(3, 34.5rem);
     grid-template-rows: repeat(2, 9.8rem);
