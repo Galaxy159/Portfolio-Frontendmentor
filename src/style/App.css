@@ -468,6 +468,11 @@ svg:hover {
     margin-bottom: 6rem;
   }
 }
+@media (min-width: 1110px) {
+  .projects__header {
+    margin-bottom: 8rem;
+  }
+}
 .projects__header--btn {
   padding-bottom: 1rem;
 }

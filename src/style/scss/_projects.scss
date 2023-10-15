@@ -21,6 +21,9 @@
     @include respond(tablet) {
       margin-bottom: 6rem;
     }
+    @include respond(desktop) {
+      margin-bottom: 8rem;
+    }
 
     &--btn {
       padding-bottom: 1rem;
