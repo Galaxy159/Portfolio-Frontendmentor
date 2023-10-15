@@ -307,6 +307,7 @@ svg:hover {
   }
 }
 .hero__content--headline {
+  position: relative;
   margin-bottom: 2rem;
 }
 @media (min-width: 768px) {
@@ -319,8 +320,31 @@ svg:hover {
     margin-bottom: 5rem;
   }
 }
-.hero__content--headline span {
-  border-bottom: 4px solid #4ee1a0;
+.hero__content--headline span:after {
+  content: "";
+  width: 22.5rem;
+  position: absolute;
+  top: 106%;
+  right: 10%;
+  height: 4px;
+  background: #4ee1a0;
+  transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+  .hero__content--headline span:after {
+    width: 40.26rem;
+    height: 6px;
+    top: 103%;
+    right: 10%;
+  }
+}
+@media (min-width: 1110px) {
+  .hero__content--headline span:after {
+    width: 49.1rem;
+    height: 6px;
+    top: 103%;
+    right: 11%;
+  }
 }
 .hero__content--headline-break {
   display: none;

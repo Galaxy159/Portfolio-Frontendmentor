@@ -98,6 +98,7 @@
       padding: 19.8rem 0 0 0;
     }
     &--headline {
+      position: relative;
       margin-bottom: 2rem;
       @include respond(tablet) {
         margin-bottom: 6rem;
@@ -106,7 +107,30 @@
         margin-bottom: 5rem;
       }
       & span {
-        border-bottom: 4px solid $color-green;
+        &:after {
+          content: "";
+          width: 22.5rem;
+          position: absolute;
+          top: 106%;
+          right: 10%;
+          height: 4px;
+          background: $color-green;
+          transform: translateY(-50%);
+
+          @include respond(tablet) {
+            width: 40.26rem;
+            height: 6px;
+            top: 103%;
+            right: 10%;
+          }
+
+          @include respond(desktop) {
+            width: 49.1rem;
+            height: 6px;
+            top: 103%;
+            right: 11%;
+          }
+        }
       }
       &-break {
         display: none;
