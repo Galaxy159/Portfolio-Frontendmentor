@@ -539,8 +539,10 @@ svg:hover {
     right: 0;
     left: 0;
     transition: all 0.2s;
+    opacity: 0;
   }
   .projects__project--links:hover {
+    opacity: 100%;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.75);
   }
