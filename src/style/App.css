@@ -317,7 +317,7 @@ svg:hover {
 }
 @media (min-width: 1110px) {
   .hero__content--headline {
-    margin-bottom: 5rem;
+    margin-bottom: 4.3rem;
   }
 }
 .hero__content--headline span:after {
