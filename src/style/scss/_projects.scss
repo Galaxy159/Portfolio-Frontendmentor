@@ -67,6 +67,10 @@
       grid-template-columns: repeat(3, max-content);
       column-gap: 1.8rem;
       margin-bottom: 2rem;
+
+      @include respond(tablet) {
+        margin-bottom: 0;
+      }
     }
 
     &--links {

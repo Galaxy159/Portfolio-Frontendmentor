@@ -518,6 +518,11 @@ svg:hover {
        column-gap: 1.8rem;
   margin-bottom: 2rem;
 }
+@media (min-width: 768px) {
+  .projects__project--tools {
+    margin-bottom: 0;
+  }
+}
 .projects__project--links {
   display: grid;
   grid-template-columns: repeat(2, max-content);
