@@ -140,7 +140,6 @@ svg {
 }
 
 .container {
-  max-width: 37.5rem;
   text-align: center;
   margin: 0 auto;
 
@@ -148,12 +147,10 @@ svg {
   background-position: right -34.3rem top 130rem;
 
   @include respond(tablet) {
-    max-width: 76.8rem;
     background-position: right -33rem top 104.5rem;
   }
 
   @include respond(desktop) {
-    max-width: 144rem;
     background-position: right -22.5rem top 107.5rem;
   }
 }
