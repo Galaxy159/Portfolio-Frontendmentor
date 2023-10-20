@@ -36,6 +36,10 @@
       grid-template-columns: repeat(2, max-content);
       justify-content: space-between;
     }
+
+    @include respond(desktop) {
+      column-gap: 3rem;
+    }
   }
 
   &__project {

@@ -15,6 +15,7 @@
 
   @include respond(desktop) {
     max-width: 111rem;
+    margin: 4rem auto;
   }
   &__logo {
     &--text {
@@ -24,6 +25,10 @@
       font-weight: 700;
       @include respond(tablet) {
         margin-bottom: 0;
+      }
+
+      @include respond(desktop) {
+        font-size: 3.2rem;
       }
     }
   }
@@ -42,6 +47,10 @@
       fill: white;
       transform: scale(0.8);
       cursor: pointer;
+
+      @include respond(desktop) {
+        transform: scale(1);
+      }
     }
   }
 }

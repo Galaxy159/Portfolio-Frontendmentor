@@ -163,6 +163,7 @@ svg:hover {
 @media (min-width: 1110px) {
   .header {
     max-width: 111rem;
+    margin: 4rem auto;
   }
 }
 .header__logo--text {
@@ -174,6 +175,11 @@ svg:hover {
 @media (min-width: 768px) {
   .header__logo--text {
     margin-bottom: 0;
+  }
+}
+@media (min-width: 1110px) {
+  .header__logo--text {
+    font-size: 3.2rem;
   }
 }
 .header__social {
@@ -193,6 +199,11 @@ svg:hover {
   fill: white;
   transform: scale(0.8);
   cursor: pointer;
+}
+@media (min-width: 1110px) {
+  .header__social--icon {
+    transform: scale(1);
+  }
 }
 
 @media (min-width: 768px) {
@@ -372,6 +383,7 @@ svg:hover {
   .hero__content--text {
     max-width: 44.5rem;
     margin-bottom: 6.6rem;
+    line-height: 3.2rem;
   }
 }
 .hero__content--btn {
@@ -480,6 +492,12 @@ svg:hover {
     display: grid;
     grid-template-columns: repeat(2, max-content);
     justify-content: space-between;
+  }
+}
+@media (min-width: 1110px) {
+  .projects__container {
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
   }
 }
 .projects__project {
